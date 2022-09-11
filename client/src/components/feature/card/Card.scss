@@ -3,12 +3,18 @@
   width: 250px;
   background-color: aliceblue;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
+  flex-direction: column;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   transition: 0.3s;
+  padding: 30px;
+  color: #064c96;
+  i {
+    margin-bottom: 10px;
+  }
 }
 
 .cardContainer:hover {

@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg ">
       <div className="container-fluid">
         <Link className="navbar-brand logoFlex noUnderline" to="/">
-          <h1>Logo</h1>
+          <img src="/assets/logo.png" alt="ePrognosis" className="imageClass" />
         </Link>
         <div className="navbar-collapse justify-content-center" id="navbarNav">
           <div className="navbar-nav first justify-content-center">

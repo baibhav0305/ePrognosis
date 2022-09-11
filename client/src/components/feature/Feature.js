@@ -6,9 +6,15 @@ const Feature = () => {
   return (
     <div className="container-fluid">
       <div className="featureContainer">
-        <Card />
-        <Card />
-        <Card />
+        <Card
+          title="Disease Prediction"
+          text="Predict diseases related to specific features"
+        />
+        <Card
+          title="Insurance Amount"
+          text="Predict medical insurance amount"
+        />
+        <Card title="Health Realted Blog" text="Publish health realted blogs" />
       </div>
     </div>
   );
