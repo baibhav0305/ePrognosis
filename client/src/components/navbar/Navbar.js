@@ -31,6 +31,13 @@ const Navbar = () => {
             <Link to="/about" className="nav-item nav-link text-uppercase mx-1">
               About
             </Link>
+            <a
+              href="https://blog-page-three.vercel.app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              BLOG
+            </a>
           </div>
           <div className="navbar-nav">
             {!user ? (

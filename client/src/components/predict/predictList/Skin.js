@@ -43,10 +43,7 @@ const Skin = () => {
       return;
     }
 
-    const { data } = await axios.post(
-      "/api/predict/skin",
-      val
-    );
+    const { data } = await axios.post("/api/predict/skin", val);
     setResult(data.answer);
     console.log(data.answer);
   };
@@ -58,7 +55,7 @@ const Skin = () => {
         <form onSubmit={handleSubmit}>
           <div className="form-row">
             <div className="mx-auto form-group col-md-4">
-              <label htmlFor="inputState">State</label>
+              <label htmlFor="inputState">Itching</label>
               <select
                 id="inputState"
                 className="form-control"
@@ -74,7 +71,7 @@ const Skin = () => {
               </select>
             </div>
             <div className="mx-auto form-group col-md-4">
-              <label htmlFor="inputState">State</label>
+              <label htmlFor="inputState">Skin Rash</label>
               <select
                 id="inputState"
                 className="form-control"
@@ -92,7 +89,7 @@ const Skin = () => {
           </div>
           <div className="form-row">
             <div className="mx-auto form-group col-md-4">
-              <label htmlFor="inputState">State</label>
+              <label htmlFor="inputState">Nodal Skin</label>
               <select
                 id="inputState"
                 className="form-control"
@@ -108,7 +105,7 @@ const Skin = () => {
               </select>
             </div>
             <div className="mx-auto form-group col-md-4">
-              <label htmlFor="inputState">State</label>
+              <label htmlFor="inputState">Joint Pain</label>
               <select
                 id="inputState"
                 name="jointpain"
@@ -126,7 +123,7 @@ const Skin = () => {
           </div>
           <div className="form-row">
             <div className="mx-auto form-group col-md-4">
-              <label htmlFor="inputState">State</label>
+              <label htmlFor="inputState">Dischrommic Path</label>
               <select
                 id="inputState"
                 className="form-control"
@@ -142,7 +139,7 @@ const Skin = () => {
               </select>
             </div>
             <div className="mx-auto form-group col-md-4">
-              <label htmlFor="inputState">State</label>
+              <label htmlFor="inputState">Pus filled Pimple</label>
               <select
                 id="inputState"
                 className="form-control"
@@ -160,7 +157,7 @@ const Skin = () => {
           </div>
           <div className="form-row">
             <div className="mx-auto form-group col-md-4">
-              <label htmlFor="inputState">State</label>
+              <label htmlFor="inputState">Scurring</label>
               <select
                 id="inputState"
                 className="form-control"
@@ -176,7 +173,7 @@ const Skin = () => {
               </select>
             </div>
             <div className="mx-auto form-group col-md-4">
-              <label htmlFor="inputState">State</label>
+              <label htmlFor="inputState">Skin Peeling</label>
               <select
                 id="inputState"
                 className="form-control"
@@ -194,7 +191,7 @@ const Skin = () => {
           </div>
           <div className="form-row">
             <div className="mx-auto form-group col-md-4">
-              <label htmlFor="inputState">State</label>
+              <label htmlFor="inputState">Silver like Dusting</label>
               <select
                 id="inputState"
                 className="form-control"
@@ -210,7 +207,7 @@ const Skin = () => {
               </select>
             </div>
             <div className="mx-auto form-group col-md-4">
-              <label htmlFor="inputState">State</label>
+              <label htmlFor="inputState">Small Dents</label>
               <select
                 id="inputState"
                 className="form-control"
@@ -228,7 +225,7 @@ const Skin = () => {
           </div>
           <div className="form-row">
             <div className="mx-auto form-group col-md-4">
-              <label htmlFor="inputState">State</label>
+              <label htmlFor="inputState">Inflammatory</label>
               <select
                 id="inputState"
                 className="form-control"
