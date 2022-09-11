@@ -138,30 +138,30 @@ def medicalinsurance():
 
 
 
-# #BREASTCANCER
-# @app.route('/breastcancerprediction',methods=['POST'])
-# def breastcancerprediction():
-#     model = load_model('ultrasound.h5')
-#     img=cv.imread("1benignbc.png")
-#     print(img.shape)
-#     img = img.reshape(1,224,260,3)
-#     # req=request.get_json()
-#     answer=model.predict(img)
-#     print(answer)
-#     answer=answer[0]
-#     ind=np.argmax(answer)
-#     str=""
-#     if ind==0:
-#         str="Benign-Non Cancerous"
-#     elif ind==1:
-#         str="Malignant-Cancerous"
-#     else:
-#         str="Normal"
-#     print(answer)
-#     result={
-#         "answer":str
-#     }
-#     return jsonify(result)
+#BREASTCANCER
+@app.route('/breastcancerprediction',methods=['POST'])
+def breastcancerprediction():
+    model = load_model('ultrasound.h5')
+    img=cv.imread("1benignbc.png")
+    print(img.shape)
+    img = img.reshape(1,224,260,3)
+    # req=request.get_json()
+    answer=model.predict(img)
+    print(answer)
+    answer=answer[0]
+    ind=np.argmax(answer)
+    str=""
+    if ind==0:
+        str="Benign-Non Cancerous"
+    elif ind==1:
+        str="Malignant-Cancerous"
+    else:
+        str="Normal"
+    print(answer)
+    result={
+        "answer":str
+    }
+    return jsonify(result)
 
 
 if __name__ == '__main__':
