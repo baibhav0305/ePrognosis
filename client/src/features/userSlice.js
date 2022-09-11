@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
 const user = JSON.parse(localStorage.getItem("user"));
-const URI = "http://localhost:5000/api/auth";
+const URI = "/api/auth";
 
 const initialState = {
   user: user ? user : null,

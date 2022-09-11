@@ -44,7 +44,7 @@ const Skin = () => {
     }
 
     const { data } = await axios.post(
-      "http://localhost:5000/api/predict/skin",
+      "/api/predict/skin",
       val
     );
     setResult(data.answer);

@@ -56,7 +56,7 @@ const Hepatitis = () => {
     }
 
     const { data } = await axios.post(
-      "http://localhost:5000/api/predict/hepatitis",
+      "/api/predict/hepatitis",
       val
     );
     setResult(data.answer);

@@ -43,7 +43,7 @@ const Stomach = () => {
     }
 
     const { data } = await axios.post(
-      "http://localhost:5000/api/predict/stomach",
+      "/api/predict/stomach",
       val
     );
     setResult(data.answer);

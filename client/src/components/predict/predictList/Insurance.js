@@ -26,7 +26,7 @@ const Insurance = () => {
     e.preventDefault();
 
     const { data } = await axios.post(
-      "http://localhost:5000/api/predict/insurance",
+      "/api/predict/insurance",
       val
     );
     setResult(data.answer);
