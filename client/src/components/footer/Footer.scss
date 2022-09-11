@@ -1,0 +1,28 @@
+.footerContainer {
+  //   background-color: aqua;
+  width: 100%;
+  //   bottom: 0;
+  box-shadow: rgba(0, 0, 0, 0.159) 5px -5px 10px;
+  //   padding: 30px 70px;
+  height: 70px;
+  padding-left: 70px;
+  padding-right: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+
+  .footerLogo {
+    h3 {
+      color: rgb(6, 168, 243);
+    }
+    cursor: pointer;
+  }
+
+  .footerText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+  }
+}

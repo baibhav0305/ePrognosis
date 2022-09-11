@@ -1,0 +1,23 @@
+.main {
+  flex-grow: 1;
+}
+
+.move {
+  z-index: 99;
+  background-color: #e982f0aa;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 15px;
+  right: 50px;
+  cursor: pointer;
+}
+.move:hover {
+  background-color: #e05ee9dd;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 22px -2px,
+    rgba(0, 0, 0, 0.3) 5px 10px 7px -3px;
+}

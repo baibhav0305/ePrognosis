@@ -1,0 +1,33 @@
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 85vh;
+
+  .textContainer {
+    max-width: 50%;
+    padding: 100px;
+  }
+
+  .imageContainer {
+    img {
+      height: 400px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .mainContainer {
+    flex-direction: column;
+    .textContainer {
+      margin-top: 50px;
+      width: 100%;
+      padding: 40px;
+    }
+    .imageContainer {
+      img {
+        width: 450px;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.registerContainer {
+  min-height: 77vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .leftContainer {
+    img {
+      height: 400px;
+    }
+  }
+  .rightContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    h3 {
+      color: #007bff;
+      margin-bottom: 30px;
+      text-decoration: dotted underline;
+    }
+  }
+}

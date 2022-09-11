@@ -1,0 +1,44 @@
+.diseaseContainer {
+  height: 430px;
+  width: 400px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transition: 0.3s;
+
+  .imageContainer {
+    img {
+      height: 250px;
+      width: 350px;
+      border-radius: 10px;
+    }
+  }
+
+  .headingContainer {
+    margin-top: 30px;
+    a {
+      text-decoration: none;
+    }
+    h3:hover {
+      color: rgb(6, 77, 210);
+      text-decoration: dotted underline;
+    }
+    h3 {
+      color: rgb(65, 128, 244);
+    }
+  }
+}
+
+.diseaseContainer:hover {
+  background-color: rgb(216, 236, 255);
+  transform: translateX(0.4rem) translateY(-1rem);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 22px -2px,
+    rgba(0, 0, 0, 0.3) 5px 10px 7px -3px;
+}
