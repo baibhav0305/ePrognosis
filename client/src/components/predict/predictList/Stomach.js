@@ -5,15 +5,23 @@ import "./Skin.scss";
 const Stomach = () => {
   const [val, setVal] = useState({
     itching: -1,
+    stomachpain: -1,
+    acidity: -1,
+    ulcersontongue: -1,
     vomiting: -1,
+    cough: -1,
     sunkeneyes: -1,
     dehydration: -1,
+    indigestion: -1,
     yellowishskin: -1,
     nausea: -1,
     lossofappetite: -1,
     abdominalpain: -1,
     diarrhoea: -1,
     yellowingofeyes: -1,
+    chestpain: -1,
+    passageofgases: -1,
+    internalitching: -1,
   });
 
   const [result, setResult] = useState("");
@@ -42,10 +50,7 @@ const Stomach = () => {
       return;
     }
 
-    const { data } = await axios.post(
-      "/api/predict/stomach",
-      val
-    );
+    const { data } = await axios.post("/api/predict/stomach", val);
     setResult(data.answer);
     console.log(data.answer);
   };
@@ -71,12 +76,72 @@ const Stomach = () => {
               </select>
             </div>
             <div class="mx-auto form-group col-md-4">
+              <label for="inputState">Stomach Pain</label>
+              <select
+                id="inputState"
+                class="form-control"
+                name="stomachpain"
+                value={val.stomachpain}
+                onChange={handleChange}
+              >
+                <option selected>Select</option>
+                <option value={1}>YES</option>
+                <option value={0}>NO</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="mx-auto form-group col-md-4">
+              <label for="inputState">Acidity</label>
+              <select
+                id="inputState"
+                class="form-control"
+                name="acidity"
+                value={val.acidity}
+                onChange={handleChange}
+              >
+                <option selected>Select</option>
+                <option value={1}>YES</option>
+                <option value={0}>NO</option>
+              </select>
+            </div>
+            <div class="mx-auto form-group col-md-4">
+              <label for="inputState">Ulcers on Tongue</label>
+              <select
+                id="inputState"
+                class="form-control"
+                name="ulcersontongue"
+                value={val.ulcersontongue}
+                onChange={handleChange}
+              >
+                <option selected>Select</option>
+                <option value={1}>YES</option>
+                <option value={0}>NO</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="mx-auto form-group col-md-4">
               <label for="inputState">Vomiting</label>
               <select
                 id="inputState"
                 class="form-control"
                 name="vomiting"
                 value={val.vomiting}
+                onChange={handleChange}
+              >
+                <option selected>Select</option>
+                <option value={1}>YES</option>
+                <option value={0}>NO</option>
+              </select>
+            </div>
+            <div class="mx-auto form-group col-md-4">
+              <label for="inputState">Cough</label>
+              <select
+                id="inputState"
+                class="form-control"
+                name="cough"
+                value={val.cough}
                 onChange={handleChange}
               >
                 <option selected>Select</option>
@@ -117,6 +182,20 @@ const Stomach = () => {
           </div>
           <div class="form-row">
             <div class="mx-auto form-group col-md-4">
+              <label for="inputState">Indigestion</label>
+              <select
+                id="inputState"
+                class="form-control"
+                name="indigestion"
+                value={val.indigestion}
+                onChange={handleChange}
+              >
+                <option selected>Select</option>
+                <option value={1}>YES</option>
+                <option value={0}>NO</option>
+              </select>
+            </div>
+            <div class="mx-auto form-group col-md-4">
               <label for="inputState">Yellowish Skin</label>
               <select
                 id="inputState"
@@ -130,6 +209,8 @@ const Stomach = () => {
                 <option value={0}>NO</option>
               </select>
             </div>
+          </div>
+          <div class="form-row">
             <div class="mx-auto form-group col-md-4">
               <label for="inputState">Nausea</label>
               <select
@@ -144,8 +225,6 @@ const Stomach = () => {
                 <option value={0}>NO</option>
               </select>
             </div>
-          </div>
-          <div class="form-row">
             <div class="mx-auto form-group col-md-4">
               <label for="inputState">Loss of Appetite</label>
               <select
@@ -160,6 +239,8 @@ const Stomach = () => {
                 <option value={0}>NO</option>
               </select>
             </div>
+          </div>
+          <div class="form-row">
             <div class="mx-auto form-group col-md-4">
               <label for="inputState">Abdominal Pain</label>
               <select
@@ -174,8 +255,6 @@ const Stomach = () => {
                 <option value={0}>NO</option>
               </select>
             </div>
-          </div>
-          <div class="form-row">
             <div class="mx-auto form-group col-md-4">
               <label for="inputState">Diarrhoea</label>
               <select
@@ -190,6 +269,8 @@ const Stomach = () => {
                 <option value={0}>NO</option>
               </select>
             </div>
+          </div>
+          <div class="form-row">
             <div class="mx-auto form-group col-md-4">
               <label for="inputState">Yellowing of Eyes</label>
               <select
@@ -197,6 +278,50 @@ const Stomach = () => {
                 class="form-control"
                 name="yellowingofeyes"
                 value={val.yellowingofeyes}
+                onChange={handleChange}
+              >
+                <option selected>Select</option>
+                <option value={1}>YES</option>
+                <option value={0}>NO</option>
+              </select>
+            </div>
+            <div class="mx-auto form-group col-md-4">
+              <label for="inputState">Chest Pain</label>
+              <select
+                id="inputState"
+                class="form-control"
+                name="chestpain"
+                value={val.chestpain}
+                onChange={handleChange}
+              >
+                <option selected>Select</option>
+                <option value={1}>YES</option>
+                <option value={0}>NO</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="mx-auto form-group col-md-4">
+              <label for="inputState">Passage of Gases</label>
+              <select
+                id="inputState"
+                class="form-control"
+                name="passageofgases"
+                value={val.passageofgases}
+                onChange={handleChange}
+              >
+                <option selected>Select</option>
+                <option value={1}>YES</option>
+                <option value={0}>NO</option>
+              </select>
+            </div>
+            <div class="mx-auto form-group col-md-4">
+              <label for="inputState">Internal Itching</label>
+              <select
+                id="inputState"
+                class="form-control"
+                name="internalitching"
+                value={val.internalitching}
                 onChange={handleChange}
               >
                 <option selected>Select</option>
