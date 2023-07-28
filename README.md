@@ -15,7 +15,7 @@ E-Prognosis health application has been created with a vision of helping and ass
 ## Demo
 
 Live Site -
-https://e-prognosis.herokuapp.com/
+https://eprognosis08.onrender.com/
 
 Video Demo - https://www.youtube.com/watch?v=Sl_U9V-xPqo
 
