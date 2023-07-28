@@ -14,7 +14,7 @@ const skin = async (req, res) => {
   };
 
   const response = await axios.post(
-    "https://health-apiv1.herokuapp.com/skin",
+    "https://eprog-nywl.onrender.com/skin",
     obj
   );
   console.log(response.data);
@@ -36,14 +36,14 @@ const hepatitis = async (req, res) => {
 
   try {
     const response = await axios.post(
-      "https://health-apiv1.herokuapp.com/hepatitis",
+      "https://eprog-nywl.onrender.com/hepatitis",
       obj
     );
     console.log(response.data);
 
     res.json(response.data);
   } catch (error) {
-    console.log(error);
+    console.log(error.message);
     res.json("sorry!");
   }
 };
@@ -63,7 +63,7 @@ const stomach = async (req, res) => {
 
   try {
     const response = await axios.post(
-      "https://health-apiv1.herokuapp.com/stomach",
+      "https://eprog-nywl.onrender.com/stomach",
       obj
     );
     console.log(response.data);
@@ -102,14 +102,14 @@ const insurance = async (req, res) => {
 
   try {
     const response = await axios.post(
-      "https://health-apiv1.herokuapp.com/medicalinsurance",
+      "https://eprog-nywl.onrender.com/medicalinsurance",
       obj
     );
     console.log(response.data);
 
     res.json(response.data);
   } catch (error) {
-    console.log(error);
+    console.log(error.message);
     res.json("sorry");
   }
 };
